@@ -1,0 +1,38 @@
+# Ignore compiled Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore development and local settings
+*.env
+*.env.*
+*.sqlite3
+
+# Ignore static files
+staticfiles/
+static/
+
+# Ignore media files
+media/
+
+# Ignore virtual environment
+venv/
+env/
+.env
+
+# Ignore database migrations
+**/migrations/
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore sensitive or private information
+secrets.json
+config.ini
+
+
+*.sublime-workspace
+__pycache__/
+local_settings.py
