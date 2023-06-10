@@ -1,14 +1,12 @@
-#from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-import json
-from django.forms.models import model_to_dict
 from products.models import Products
 from products.ProductSerializer import ProductSerializer
 
 @api_view(["GET"])
 def get_random_product(request, *args, **kwargs):
      instance = Products.objects.all().order_by("?").first()
+     #instance = Products.objects.get(pk=1)
      data = {}
      if (instance):
          #data = model_to_dict(instance)
